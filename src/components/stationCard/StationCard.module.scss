@@ -1,0 +1,32 @@
+@import "src/styles";
+
+.wrapper {
+  @include flex(row, center, flex-start);
+  width: 100%;
+  gap: 15px;
+
+  @include tabletAndDesktop {
+    @include flex(column, flex-start, center);
+    width: fit-content;
+  }
+
+  & * {
+    transition: $transitionAll03Ease;
+  }
+
+  .infoWrapper {
+    @include flex(column, flex-start, center);
+    gap: 10px;
+
+    .name {
+      font-size: 20px;
+      line-height: 26px;
+      color: $primary;
+      margin: 0;
+
+      &:hover {
+        color: rgba($primary, .7);
+      }
+    }
+  }
+}

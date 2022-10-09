@@ -1,0 +1,58 @@
+@import "src/styles";
+
+.wrapper {
+  width: 100%;
+
+  @include heading {
+    margin-bottom: 15px;
+
+    @include tabletAndDesktop {
+      margin-bottom: 0;
+    }
+  };
+
+  .station {
+    margin-bottom: 40px;
+
+    @include tabletAndDesktop {
+      margin-bottom: 80px;
+    }
+
+    .row {
+      @include flex(row);
+      gap: 15px
+    }
+
+    .audio {
+      margin-top: 20px;
+      width: 100%;
+
+      @include tabletAndDesktop {
+        min-width: 400px;
+        margin: 20px 0;
+      }
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 20px;
+      color: $darkGray;
+    }
+
+    .infoWrapper {
+      @include flex(column);
+      font-size: 18px;
+      color: $lightGray;
+
+      .info {
+        font-size: 0.875em;
+        line-height: 1em;
+        margin-bottom: 4px;
+      }
+
+      .tags {
+        margin-top: 15px;
+      }
+    }
+  }
+}

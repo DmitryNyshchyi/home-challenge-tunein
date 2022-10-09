@@ -1,0 +1,9 @@
+@import "src/styles";
+
+.wrapper {
+  @include heading {
+    & span {
+      font-size: .75em;
+    }
+  }
+}

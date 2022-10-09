@@ -1,0 +1,15 @@
+@import "src/styles/variables";
+
+// For tablet and desktop
+@mixin tabletAndDesktop() {
+  @media (min-width: $screen-tablet-min-width + px) {
+    @content;
+  }
+}
+
+// For desktop
+@mixin desktop() {
+  @media (min-width: $screen-desktop-min-width + px) {
+    @content;
+  }
+}

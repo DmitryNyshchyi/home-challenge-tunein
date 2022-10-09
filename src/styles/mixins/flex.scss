@@ -1,0 +1,17 @@
+@mixin flex($direction: row, $align: false, $justify: false, $wrap: false, $inline: false) {
+  @if $inline {
+    display: inline-flex;
+  } @else {
+    display: flex;
+  }
+  @if $align {
+    align-items: $align;
+  }
+  @if $justify {
+    justify-content: $justify;
+  }
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+  flex-direction: $direction;
+}

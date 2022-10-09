@@ -1,0 +1,14 @@
+@import "src/styles";
+
+.wrapper {
+  grid-area: main;
+  width: 100%;
+  margin: 25px auto;
+  padding: 0 15px;
+
+  @include desktop {
+    margin: 40px auto;
+    padding: 0 45px;
+    max-width: $screen-desktop-middle-width + px;
+  }
+}

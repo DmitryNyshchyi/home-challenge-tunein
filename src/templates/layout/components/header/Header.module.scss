@@ -1,0 +1,15 @@
+@import "src/styles";
+
+.wrapper {
+  @include flex(row, center, center);
+  grid-area: header;
+  z-index: 20;
+  padding: 0 25px;
+  height: 66px;
+  background: $primary;
+
+  @include desktop {
+    @include flex(row, center, flex-start);
+    padding: 0 45px;
+  }
+}

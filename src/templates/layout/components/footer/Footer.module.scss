@@ -1,0 +1,22 @@
+@import "src/styles";
+
+.wrapper {
+  grid-area: footer;
+  padding: 15px 25px;
+  background: $primary;
+
+  .copyright {
+    font-size: 14px;
+    line-height: 26px;
+    color: $white;
+    text-align: center;
+  }
+
+  @include desktop {
+    padding: 15px 45px;
+
+    .copyright {
+      text-align: left;
+    }
+  }
+}
