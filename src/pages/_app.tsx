@@ -7,6 +7,7 @@ import { wrapper } from '@/store/store';
 /*
  * TODO to improve:
  * - implement 4XX and 5XX pages
+ * - write tests
  * - download and add custom fonts
  * - add caching
  * */
